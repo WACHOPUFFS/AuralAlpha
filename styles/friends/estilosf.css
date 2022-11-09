@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Hind+Madurai:wght@600&family=Montserrat:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.contenedor-amigos{
+    background-color: #1e1e1e;
+    padding: 2em;
+    border-radius: 1.8em;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: auto;
+    color: #1e1e1e;
+}
+.post-img-1,
+.post-img-2,
+.post-img-3{
+    height: 200px;
+    background-image: url("/img/user placeholder.jpg");
+}
+
+.post-img-1{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    border-radius: 1rem;
+}
+
+.post-img-2{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    border-radius: 1rem;
+}
+
+.post-img-3{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    border-radius: 1rem;
+}
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    transition: .2s;
+    background-color: #fdfdff;
+    border-radius: 1.8em;
+}
+
+.post-header{
+    width: 100%;
+    height: 200px;
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+
+.post-header:hover .post-img-1,
+.post-header:hover .post-img-2,
+.post-header:hover .post-img-3{
+    transform: scale(1.1);
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body .nombre-usuario{
+    font-family: "montserrat";
+}
+
+.post-body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-body-1{
+    background-color: #E23C3C;
+    color: #1e1e1e;
+}
+
+.post-body-2{
+    background-color: #E09130;
+    color: #fdfdff;
+}
+.post-body-3{
+    background-color: #DEE448;
+    color: #1e1e1e;
+}
+@media (max-width: 840px){
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

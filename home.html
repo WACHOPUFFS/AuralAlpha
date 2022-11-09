@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/home/styleh.css">
+    <link rel="icon" href="img/AuralLogoB.png">
+</head>
+<body>
+  <div class="d-flex flex-row">
+    <!--widget de musica-->
+    <div class="playerM">
+      <div class="musicC">
+        <img src="img/cover.jpg" alt="">
+      </div>
+      <audio src="" type="audio/mp3" controls></audio>
+    </div>
+    <!--contenedor de publicaciones-->
+    <div class="contenedor-publicaciones">No hay Publicaciones</div>
+    <div class="botones-laterales">
+    <!--boton para subir fotos-->
+      <div class="btnf">
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Subir foto
+      </a>
+      </div>
+    </div>
+      <!--acerca de nosotros-->
+      <div class="contenedor-acerca"><a href="aboutUs.html" class="btnNo"><button>Acerca de nosotros</button></a></div>
+  </div> <!--navbar-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img src="img/AuralLogoW.png" alt="logo" width="35" height="35">
+            Aural
+          </a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search submit" placeholder="Buscar" aria-label="Search">
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="profile.html">Mi perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="friends.html">Amigos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="settings.html">Configuración</a>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Cerrar Sesión</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
